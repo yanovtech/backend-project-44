@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/yanovtech/backend-project-44/issues"
   },
-  "homepage": "https://github.com/yanovtech/backend-project-44#readme"
+  "homepage": "https://github.com/yanovtech/backend-project-44#readme",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
