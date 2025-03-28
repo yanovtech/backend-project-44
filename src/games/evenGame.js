@@ -5,7 +5,7 @@ export const RULES_OF_GAME = 'Answer "yes" if the number is even, otherwise answ
 
 const isEven = (number) => number % 2 === 0;
 
-export default () => {
+export const evenGame = () => {
     const result = {};
     for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
         const value = getRandomArbitrary(MIN_VALUE, MAX_VALUE);

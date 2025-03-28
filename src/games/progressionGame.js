@@ -23,7 +23,7 @@ const makeProgression = (firstNumber, length, step) => {
     return [answer, progression];
 }
 
-export default () => {
+export const progressionGame = () => {
     const result = {};
     for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
         const firstNumber = getRandomArbitrary(MIN_VALUE, MAX_VALUE);

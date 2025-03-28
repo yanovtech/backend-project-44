@@ -16,7 +16,7 @@ const makeCalc = (operator, firstOperand, secondOperand) => {
     }
 }
 
-export default () => {
+export const calcGame = () => {
     const result = {};
     for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
         const operator = OPERATORS[getRandomArbitrary(0, 3)];

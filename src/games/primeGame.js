@@ -10,7 +10,7 @@ const isPrime = (number) => {
     return number !== 1;
 }
 
-export default () => {
+export const primeGame = () => {
     const result = {};
     for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
         const number = getRandomArbitrary(MIN_VALUE, MAX_VALUE);

@@ -12,7 +12,7 @@ const makeGCD = (firstValue, secondValue) => {
     return firstValue;
 };
 
-export default () => {
+export const gcdGame = () => {
     const result = {};
     for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
         const firstValue = getRandomArbitrary(MIN_VALUE, MAX_VALUE);
