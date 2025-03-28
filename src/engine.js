@@ -9,7 +9,7 @@ const engine = (rules, game) => {
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
   console.log(`${rules}`);
-  for (const [question, answer] of Object.entries(game)) {
+  Object.entries(game).forEach(([question, answer]) => {
     console.log(`Question: ${question}!`);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (playerAnswer !== answer) {
@@ -18,8 +18,13 @@ const engine = (rules, game) => {
       return;
     }
     console.log('Correct!');
-  }
+  });
   console.log(`Congratulations, ${playerName}!`);
 };
 
-export { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE, engine };
+export {
+  NUMBER_OF_ROUNDS,
+  MIN_VALUE,
+  MAX_VALUE,
+  engine,
+};

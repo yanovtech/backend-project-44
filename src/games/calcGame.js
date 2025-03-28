@@ -6,7 +6,7 @@ export const RULES_OF_GAME = 'What is the result of the expression?';
 const OPERATORS = ['*', '+', '-'];
 
 const makeCalc = (operator, firstOperand, secondOperand) => {
-  switch(operator){
+  switch (operator) {
     case '+':
       return firstOperand + secondOperand;
     case '-':
@@ -14,7 +14,7 @@ const makeCalc = (operator, firstOperand, secondOperand) => {
     case '*':
       return firstOperand * secondOperand;
     default:
-      return;
+      throw new Error(`Unknown operator: ${operator}`);
   }
 };
 
