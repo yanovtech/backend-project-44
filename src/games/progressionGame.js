@@ -1,4 +1,4 @@
-import getRandomArbitrary from '../getRandomArbitrarys.js';
+import getRandomArbitrary from '../getRandomArbitrary.js';
 import { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE } from '../engine.js';
 
 export const RULES_OF_GAME = 'What number is missing in the progression?';
