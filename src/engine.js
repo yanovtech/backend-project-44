@@ -15,7 +15,7 @@ const engine = (rules, game) => {
     if (playerAnswer !== answer) {
       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       console.log(`Let's try again, ${playerName}!`);
-      return;
+      throw new Error('');
     }
     console.log('Correct!');
   });

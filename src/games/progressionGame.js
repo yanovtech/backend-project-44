@@ -8,7 +8,7 @@ const MAX_LENGTH_PROGRESSION = 10;
 const STEP = {
   0: 2,
   1: 3,
-  2: 5
+  2: 5,
 };
 
 const makeProgression = (firstNumber, length, step) => {
