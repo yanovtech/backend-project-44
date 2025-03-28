@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 
-export const NUMBER_OF_ROUNDS = 3;
+const NUMBER_OF_ROUNDS = 3;
+const MIN_VALUE = 1;
+const MAX_VALUE = 99;
 
 export default (rules, game) => {
     console.log('Welcome to the Brain Games!');
@@ -20,3 +22,5 @@ export default (rules, game) => {
     }
     console.log(`Congratulations, ${playerName}!`);
 }
+
+export { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE };

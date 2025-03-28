@@ -1,8 +1,5 @@
 import { getRandomArbitrary } from "../generator.js";
-import { NUMBER_OF_ROUNDS } from "../engine.js";
-
-const MIN_VALUE = 1;
-const MAX_VALUE = 99;
+import { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE } from "../engine.js";
 
 export const RULES_OF_GAME = 'Answer "yes" if the number is even, otherwise answer "no".';
 
