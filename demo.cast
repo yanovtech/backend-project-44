@@ -1,0 +1,13 @@
+{"version": 2, "width": 204, "height": 63, "timestamp": 1743159867, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}}
+[0.021159, "o", "Restored session: пятница, 28 марта 2025 г. 14:02:59 (MSK)\r\n"]
+[0.029013, "o", "Agent pid 5706\r\n"]
+[0.034759, "o", "Identity added: /Users/bulatgalimanov/.ssh/id_rsa_github (yanovlive@gmail.com)\r\n"]
+[0.035179, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                                                           \r \r"]
+[0.035717, "o", "\u001b]7;file://yanov.local/Users/bulatgalimanov/backend-project-44\u0007"]
+[0.035781, "o", "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J@yanov backend-project-44 $ \u001b[K\u001b[?2004h"]
+[15.391751, "o", "\u001b[?2004l\r\r\n"]
+[15.392327, "o", "\r\nSaving session..."]
+[15.403571, "o", "\r\n...saving history..."]
+[15.413861, "o", "truncating history files..."]
+[15.416212, "o", "\r\n..."]
+[15.416228, "o", "completed.\r\n"]
