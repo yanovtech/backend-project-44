@@ -15,7 +15,7 @@ const makeProgression = (firstNumber, length, step) => {
     const progression = [];
     progression.push(firstNumber);
     for (let i = 1; i <= length; i += 1) {
-        progression.push(progression[i - 1] += step);
+        progression.push(progression[i - 1] + step);
     }
     const answerIndex = getRandomArbitrary(0, progression.length);
     const answer = progression[answerIndex];
