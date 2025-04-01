@@ -9,7 +9,8 @@ const engine = (rules, game) => {
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
   console.log(`${rules}`);
-  for (const question of Object.keys(game)) {
+  const answers = Object.keys(game);
+  for (const question of answers) {
     const answer = game[question];
     console.log(`Question: ${question}!`);
     const playerAnswer = readlineSync.question('Your answer: ');
