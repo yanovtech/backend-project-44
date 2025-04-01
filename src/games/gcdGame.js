@@ -1,7 +1,7 @@
 import getRandomArbitrary from '../getRandomArbitrary.js';
-import { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE } from '../engine.js';
+import { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE } from '../startGame.js';
 
-export const RULES_OF_GAME = 'Find the greatest common divisor of given numbers.';
+export const RULE_OF_GAME = 'Find the greatest common divisor of given numbers.';
 
 const makeGCD = (a, b) => {
   let firstValue = a;
@@ -14,7 +14,7 @@ const makeGCD = (a, b) => {
   return firstValue;
 };
 
-export const gcdGame = () => {
+export const makeGcdGame = () => {
   const result = {};
   for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
     const firstValue = getRandomArbitrary(MIN_VALUE, MAX_VALUE);

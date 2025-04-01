@@ -1,7 +1,7 @@
 import getRandomArbitrary from '../getRandomArbitrary.js';
-import { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE } from '../engine.js';
+import { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE } from '../startGame.js';
 
-export const RULES_OF_GAME = 'What is the result of the expression?';
+export const RULE_OF_GAME = 'What is the result of the expression?';
 
 const OPERATORS = ['*', '+', '-'];
 
@@ -18,7 +18,7 @@ const makeCalc = (operator, firstOperand, secondOperand) => {
   }
 };
 
-export const calcGame = () => {
+export const makeCalcGame = () => {
   const result = {};
   for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
     const operator = OPERATORS[getRandomArbitrary(0, 3)];

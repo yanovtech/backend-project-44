@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { engine } from '../src/engine.js';
-import { calcGame, RULES_OF_GAME } from '../src/games/calcGame.js';
+import { startGame } from '../src/startGame.js';
+import { makeCalcGame, RULE_OF_GAME } from '../src/games/calcGame.js';
 
-engine(RULES_OF_GAME, calcGame());
+startGame(RULE_OF_GAME, makeCalcGame());
