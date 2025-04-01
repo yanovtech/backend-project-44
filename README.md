@@ -9,7 +9,6 @@ is a set of five console games. Each game asks questions that require correct an
 3. Install dependencies:
 ```npm install``` or ```make insatll```
 
-## The games are:
 ## Calculator: Arithmetic expressions that need to be solved.
 [![asciicast](https://asciinema.org/a/iXA4KkSF1OM7Ux4H4GCMfG3Le.svg)](https://asciinema.org/a/iXA4KkSF1OM7Ux4H4GCMfG3Le)
 ## Progression: Finding missing numbers in a sequence.
