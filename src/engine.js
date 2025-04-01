@@ -9,16 +9,17 @@ const engine = (rules, game) => {
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
   console.log(`${rules}`);
-  Object.entries(game).forEach(([question, answer]) => {
+  for (const question of Object.keys(game)) {
+    const answer = game[question];
     console.log(`Question: ${question}!`);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (playerAnswer !== answer) {
       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       console.log(`Let's try again, ${playerName}!`);
-      throw new Error('');
+      return;
     }
     console.log('Correct!');
-  });
+  }
   console.log(`Congratulations, ${playerName}!`);
 };
 
