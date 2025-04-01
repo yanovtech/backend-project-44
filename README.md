@@ -1,4 +1,14 @@
-"Brain Games" is a set of five console games. Each game asks questions that require correct answers. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to try again. The games are:
+"Brain Games" is a set of five console games. Each game asks questions that require correct answers. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to try again.
+
+## Installation
+1. Clone the repository:
+```git clone https://github.com/yanovtech/backend-project-44.git```
+2. Go to the project folder:
+```cd backend-project-44```
+3. Install dependencies:
+```npm install``` or ```make insatll```
+
+The games are:
 Calculator: Arithmetic expressions that need to be solved.
 [![asciicast](https://asciinema.org/a/iXA4KkSF1OM7Ux4H4GCMfG3Le.svg)](https://asciinema.org/a/iXA4KkSF1OM7Ux4H4GCMfG3Le)
 Progression: Finding missing numbers in a sequence.
