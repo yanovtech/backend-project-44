@@ -10,9 +10,10 @@ const engine = (rules, game) => {
   console.log(`Hello, ${playerName}!`);
   console.log(`${rules}`);
   const questions = Object.keys(game);
+  const answers = Object.values(game);
   for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
     const question = questions[i];
-    const answer = game[question];
+    const answer = answers[i];
     console.log(`Question: ${question}!`);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (playerAnswer !== answer) {
