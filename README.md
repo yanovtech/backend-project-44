@@ -1,4 +1,4 @@
-## "Brain Games"
+## **Brain Games**
 is a set of five console games. Each game asks questions that require correct answers. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to try again.
 
 ## Installation
