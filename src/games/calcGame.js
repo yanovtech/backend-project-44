@@ -1,5 +1,5 @@
 import getRandomArbitrary from '../getRandomArbitrary.js';
-import { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE } from '../startGame.js';
+import { ROUND_COUNT, MIN_VALUE, MAX_VALUE } from '../startGame.js';
 
 export const RULE_OF_GAME = 'What is the result of the expression?';
 
@@ -20,7 +20,7 @@ const makeCalc = (operator, firstOperand, secondOperand) => {
 
 export const makeCalcGame = () => {
   const result = {};
-  for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
+  for (let i = 0; i < ROUND_COUNT; i += 1) {
     const operator = OPERATORS[getRandomArbitrary(0, 3)];
     const firstOperand = getRandomArbitrary(MIN_VALUE, MAX_VALUE);
     const secondOperand = getRandomArbitrary(MIN_VALUE, MAX_VALUE);

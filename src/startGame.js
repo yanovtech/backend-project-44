@@ -27,7 +27,7 @@ const startGame = (rules, game) => {
 };
 
 export {
-  ROUND_COUNT as NUMBER_OF_ROUNDS,
+  ROUND_COUNT,
   MIN_VALUE,
   MAX_VALUE,
   startGame,

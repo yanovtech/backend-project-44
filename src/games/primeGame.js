@@ -1,5 +1,5 @@
 import getRandomArbitrary from '../getRandomArbitrary.js';
-import { NUMBER_OF_ROUNDS, MIN_VALUE, MAX_VALUE } from '../startGame.js';
+import { ROUND_COUNT, MIN_VALUE, MAX_VALUE } from '../startGame.js';
 
 export const RULE_OF_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -12,7 +12,7 @@ const isPrime = (number) => {
 
 export const makePrimeGame = () => {
   const result = {};
-  for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
+  for (let i = 0; i < ROUND_COUNT; i += 1) {
     const number = getRandomArbitrary(MIN_VALUE, MAX_VALUE);
     const question = number.toString();
     const answer = isPrime(number) ? 'yes' : 'no';
